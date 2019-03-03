@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drag image</title>
+    <style>
+        #dropZone,
+        #dragZone {
+            width: 100%;
+            height: 300px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <figure id="dragZone">
+        <img id="ball" src="ball.png" alt="blue ball" ondragstart="dragStart(event)">
+    </figure>
+    <div id="dropZone" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <script src="imageDrag.js" type="text/javascript"></script>
+
+</body>
+
+
+</html>
